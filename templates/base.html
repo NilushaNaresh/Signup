@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        SignUp
+    </title>
+</head>
+<body>
+<div id="form1">
+    <header>Login</header><br>
+    <form action='/welcome' method="POST">
+
+       <p> Username : <input type="text" name="username" id="username"> </p> <br>
+       <p> Password : <input type="password" size="20" name="password" id="password"> </p><br>
+                      <input type="submit" value="Sign-in">
+    </form>
+  {% for name in add_names %}
+     {{ name.username }}
+     {{ name.password }}
+ {% endfor %}
+</div>
+</body>
+</html>
